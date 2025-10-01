@@ -1,750 +1,1015 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Laralink">
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.png">
-    <!-- Site Title -->
-    <title>LeafLife - Garden Landscape Design Service Website</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/slick.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <!-- Start Preloader -->
-    <div class="cs_preloader">
-      <div class="cs_preloader_in">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="cs_preloader_text">Loading...</div>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Laralink">
+  <!-- Favicon Icon -->
+  <link rel="icon" href="assets/img/favicon.png">
+  <!-- Site Title -->
+  <title>LeafLife - Garden Landscape Design Service Website</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/lightgallery.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Start Preloader -->
+  <div class="cs_preloader">
+    <div class="cs_preloader_in">
+      <span></span>
+      <span></span>
     </div>
-    <!-- End Preloader -->
-    <!-- Start Header Section -->
-    <header class="cs_site_header cs_style_1 cs_sticky_header">
-      <div class="cs_main_header">
-        <div class="container">
-          <div class="cs_main_header_in">
-            <div class="cs_main_header_left">
-              <a class="cs_site_branding" href="index.html">
-                <img src="assets/img/cacbon/logo.png" alt="Logo" style="width: 120px;">
-              </a>
-            </div>
-            <div class="cs_main_header_center">
-              <div class="cs_nav cs_heading_color">
-                <nav class="cs_nav_list_wrap text-uppercase">
-                  <ul class="cs_nav_list">
-                    <li><a href="#">VỀ CHÚNG TÔI</a></li>
-                    <li><a href="#">DỊCH VỤ</a></li>
-                    <li><a href="#">DỰ ÁN</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">MORE</a>
-                      <ul>
-                        <li><a href="#">GALLERY</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div class="cs_main_header_right">
-              <div class="cs_header_icon_btns">
-                <a href="#" class="cs_header_icon_btn cs_center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.0711 12.9289C15.9819 11.8398 14.6855 11.0335 13.2711 10.5454C14.786 9.50199 15.7812 7.75578 15.7812 5.78125C15.7812 2.59348 13.1878 0 10 0C6.81223 0 4.21875 2.59348 4.21875 5.78125C4.21875 7.75578 5.21402 9.50199 6.72898 10.5454C5.31453 11.0335 4.01813 11.8398 2.92895 12.9289C1.0402 14.8177 0 17.3289 0 20H1.5625C1.5625 15.3475 5.34754 11.5625 10 11.5625C14.6525 11.5625 18.4375 15.3475 18.4375 20H20C20 17.3289 18.9598 14.8177 17.0711 12.9289ZM10 10C7.67379 10 5.78125 8.1075 5.78125 5.78125C5.78125 3.455 7.67379 1.5625 10 1.5625C12.3262 1.5625 14.2188 3.455 14.2188 5.78125C14.2188 8.1075 12.3262 10 10 10Z" fill="currentColor"/>
-                  </svg>                    
-                </a>
-                <button type="button" class="cs_header_icon_btn cs_search_tobble_btn cs_center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                    <path d="M19.7556 18.5774L14.0682 12.89C15.1699 11.5292 15.8332 9.8 15.8332 7.91669C15.8332 3.55174 12.2815 9.15527e-05 7.91656 9.15527e-05C3.55161 9.15527e-05 0 3.5517 0 7.91666C0 12.2816 3.55165 15.8333 7.9166 15.8333C9.7999 15.8333 11.5291 15.1699 12.8899 14.0683L18.5773 19.7557C18.7398 19.9182 18.9531 19.9999 19.1665 19.9999C19.3798 19.9999 19.5932 19.9182 19.7557 19.7557C20.0815 19.4299 20.0815 18.9032 19.7556 18.5774ZM7.9166 14.1666C4.46996 14.1666 1.66666 11.3633 1.66666 7.91666C1.66666 4.47001 4.46996 1.66672 7.9166 1.66672C11.3632 1.66672 14.1665 4.47001 14.1665 7.91666C14.1665 11.3633 11.3632 14.1666 7.9166 14.1666Z" fill="currentColor"/>
-                    </g>
-                    <defs>
-                    <clipPath>
-                    <rect width="20" height="20" fill="currentColor"/>
-                    </clipPath>
-                    </defs>
-                  </svg>                    
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="cs_header_form_wrap cs_center">
-      <div class="cs_header_form_overlay"></div>
-      <form action="#" class="cs_header_form">
-        <input type="text" class="cs_header_form_input" placeholder="Search...">
-        <button type="button" class="cs_header_form_btn cs_center">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g>
-            <path d="M19.7556 18.5774L14.0682 12.89C15.1699 11.5292 15.8332 9.8 15.8332 7.91669C15.8332 3.55174 12.2815 9.15527e-05 7.91656 9.15527e-05C3.55161 9.15527e-05 0 3.5517 0 7.91666C0 12.2816 3.55165 15.8333 7.9166 15.8333C9.7999 15.8333 11.5291 15.1699 12.8899 14.0683L18.5773 19.7557C18.7398 19.9182 18.9531 19.9999 19.1665 19.9999C19.3798 19.9999 19.5932 19.9182 19.7557 19.7557C20.0815 19.4299 20.0815 18.9032 19.7556 18.5774ZM7.9166 14.1666C4.46996 14.1666 1.66666 11.3633 1.66666 7.91666C1.66666 4.47001 4.46996 1.66672 7.9166 1.66672C11.3632 1.66672 14.1665 4.47001 14.1665 7.91666C14.1665 11.3633 11.3632 14.1666 7.9166 14.1666Z" fill="currentColor"/>
-            </g>
-            <defs>
-            <clipPath>
-            <rect width="20" height="20" fill="currentColor"/>
-            </clipPath>
-            </defs>
-          </svg>                    
-        </button>
-      </form>
-    </div>
-    <!-- End Header Section -->
-    <!-- Start Hero Section -->
-    <section class="cs_hero cs_style_1 cs_heading_bg cs_white_color">
+    <div class="cs_preloader_text">Loading...</div>
+  </div>
+  <!-- End Preloader -->
+  <!-- Start Header Section -->
+  <header class="cs_site_header cs_style_1 cs_sticky_header">
+    <div class="cs_main_header">
       <div class="container">
-        <div class="cs_hero_in">
-          <div class="cs_hero_text">
-            <h1 class="cs_hero_title cs_fs_100 cs_normal cs_mb_12 cs_white_color cs_gradient_color_1 wow fadeInUp"><b>Nhà tư vấn <br> tín chỉ carbon</b></h1>
-            <p class="cs_hero_subtitle cs_fs_20 cs_mb_32 cs_opacity_7_5">AFS là đơn vị tiên phong tại Đông Nam Á triển khai các dự án trồng rừng, nhà máy Biochar – Biomass và tư vấn ESG để hình thành quỹ dự trữ Carbon đạt chuẩn quốc tế.
-</p>
-            <div class="cs_hero_btns">
-              <a href="services.html" class="cs_btn cs_style_1 cs_bold cs_heading_color cs_white_bg wow fadeInLeft">Tư vấn ngay</a>
-              <a href="projects.html" class="cs_btn cs_style_2 cs_bold cs_white_color wow fadeInRight">Khám phá các dự án</a>
-            </div>
-          </div>
-          <div class="cs_hero_funfact_wrap wow fadeInRight">
-            <div class="cs_hero_funfact">
-              <h3 class="cs_fs_24 cs_bold cs_white_color mb-0">500+</h3>
-              <p class="cs_fs_20 cs_white_color cs_opacity_7_5 cs_mb_16">Khách hàng hài lòng</p>
-              <div class="cs_circle_group">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="cs_hero_box wow fadeInUp">
-            <div class="cs_hero_box_icon cs_mb_29">
-              <svg width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 0C4.93447 0 0 4.97132 0 11.0821C0 13.0939 0.895529 15.2575 0.933059 15.3488C1.22229 16.0404 1.793 17.1147 2.20453 17.7445L9.74665 29.2575C10.0553 29.7295 10.5121 30 11 30C11.4879 30 11.9447 29.7295 12.2534 29.2581L19.7961 17.7445C20.2083 17.1147 20.7784 16.0404 21.0676 15.3488C21.1051 15.2581 22 13.0945 22 11.0821C22 4.97132 17.0655 0 11 0ZM19.8744 14.8429C19.6162 15.4628 19.085 16.4622 18.7155 17.0267L11.1728 28.5404C11.0239 28.7679 10.9767 28.7679 10.8279 28.5404L3.28512 17.0267C2.91565 16.4622 2.38441 15.4622 2.12624 14.8422C2.11523 14.8155 1.29412 12.824 1.29412 11.0821C1.29412 5.69035 5.64818 1.30378 11 1.30378C16.3518 1.30378 20.7059 5.69035 20.7059 11.0821C20.7059 12.8266 19.8828 14.8233 19.8744 14.8429Z" fill="currentColor"/>
-                <path d="M11.0003 5.21578C7.78893 5.21578 5.17676 7.84811 5.17676 11.0828C5.17676 14.3175 7.78893 16.9498 11.0003 16.9498C14.2116 16.9498 16.8238 14.3175 16.8238 11.0828C16.8238 7.84811 14.2116 5.21578 11.0003 5.21578ZM11.0003 15.646C8.50329 15.646 6.47088 13.5991 6.47088 11.0828C6.47088 8.56649 8.50329 6.51956 11.0003 6.51956C13.4973 6.51956 15.5297 8.56649 15.5297 11.0828C15.5297 13.5991 13.4973 15.646 11.0003 15.646Z" fill="currentColor"/>
-              </svg>                
-            </div>
-            <h3 class="cs_hero_box_title cs_fs_24 cs_mb_12 cs_white_color">AFS Corporation</h3>
-            <p class="cs_hero_box_subtitle mb-0 cs_opacity_7_5">Số 677 Lạc Long Quân, Tây Hồ, Thành Phố Hà Nội, Việt Nam</p>
-            <a href="projects.html" class="cs_arrow_btn cs_hero_box_btn cs_center cs_heading_bg cs_white_color">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z" fill="currentColor"/>
-              </svg>                
+        <div class="cs_main_header_in">
+          <div class="cs_main_header_left">
+            <a class="cs_site_branding" href="index.html">
+              <img src="assets/img/cacbon/logo.png" alt="Logo" style="width: 120px;">
             </a>
           </div>
-        </div>
-      </div>
-      <div class="cs_hero_bg">
-        <div class="cs_slider cs_style_1">
-          <div class="cs_slider_container" data-autoplay="1" data-loop="1" data-speed="1200" data-center="0" data-variable-width="0" data-slides-per-view="1">
-            <div class="cs_slider_wrapper">
-              <div class="cs_slide">
-                <div class="cs_hero_bg_in cs_bg_filed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_1.jpg');"></div>
-              </div>
-              <div class="cs_slide">
-                <div class="cs_hero_bg_in cs_bg_filed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_2.jpeg');"></div>
-              </div>
-              <div class="cs_slide">
-                <div class="cs_hero_bg_in cs_bg_filed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_3.jpeg');"></div>
-              </div>
-              <div class="cs_slide">
-                <div class="cs_hero_bg_in cs_bg_filed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_4.jpeg');"></div>
-              </div>
+          <div class="cs_main_header_center">
+            <div class="cs_nav cs_heading_color">
+              <nav class="cs_nav_list_wrap text-uppercase">
+                <ul class="cs_nav_list">
+                  <li><a href="#">VỀ CHÚNG TÔI</a></li>
+                  <li><a href="#">DỊCH VỤ</a></li>
+                  <li><a href="#">DỰ ÁN</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#">MORE</a>
+                    <ul>
+                      <li><a href="#">GALLERY</a></li>
+                      <li><a href="#">BLOG</a></li>
+                      <li><a href="#">CONTACT</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
-          <div class="cs_pagination_1_wrap">
-            <div class="container">
-              <div class="cs_pagination_1_in">
-                <div class="cs_slider_number cs_style_1 cs_white_color cs_bold"></div>
-                <div class="cs_pagination cs_style_1"></div>
-              </div>
+          <div class="cs_main_header_right">
+            <div class="cs_header_icon_btns">
+              <a href="#" class="cs_header_icon_btn cs_center">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.0711 12.9289C15.9819 11.8398 14.6855 11.0335 13.2711 10.5454C14.786 9.50199 15.7812 7.75578 15.7812 5.78125C15.7812 2.59348 13.1878 0 10 0C6.81223 0 4.21875 2.59348 4.21875 5.78125C4.21875 7.75578 5.21402 9.50199 6.72898 10.5454C5.31453 11.0335 4.01813 11.8398 2.92895 12.9289C1.0402 14.8177 0 17.3289 0 20H1.5625C1.5625 15.3475 5.34754 11.5625 10 11.5625C14.6525 11.5625 18.4375 15.3475 18.4375 20H20C20 17.3289 18.9598 14.8177 17.0711 12.9289ZM10 10C7.67379 10 5.78125 8.1075 5.78125 5.78125C5.78125 3.455 7.67379 1.5625 10 1.5625C12.3262 1.5625 14.2188 3.455 14.2188 5.78125C14.2188 8.1075 12.3262 10 10 10Z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+              <button type="button" class="cs_header_icon_btn cs_search_tobble_btn cs_center">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="M19.7556 18.5774L14.0682 12.89C15.1699 11.5292 15.8332 9.8 15.8332 7.91669C15.8332 3.55174 12.2815 9.15527e-05 7.91656 9.15527e-05C3.55161 9.15527e-05 0 3.5517 0 7.91666C0 12.2816 3.55165 15.8333 7.9166 15.8333C9.7999 15.8333 11.5291 15.1699 12.8899 14.0683L18.5773 19.7557C18.7398 19.9182 18.9531 19.9999 19.1665 19.9999C19.3798 19.9999 19.5932 19.9182 19.7557 19.7557C20.0815 19.4299 20.0815 18.9032 19.7556 18.5774ZM7.9166 14.1666C4.46996 14.1666 1.66666 11.3633 1.66666 7.91666C1.66666 4.47001 4.46996 1.66672 7.9166 1.66672C11.3632 1.66672 14.1665 4.47001 14.1665 7.91666C14.1665 11.3633 11.3632 14.1666 7.9166 14.1666Z"
+                      fill="currentColor" />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect width="20" height="20" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Hero Section -->
-<section class="cs_gray_bg">
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_section_heading cs_style_2 cs_color_1">
-          <h2 class="cs_section_title cs_fs_80 mb-0">TẦM NHÌN <br><span></span></h2> 
-          <div class="cs_section_right">
-            <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">AFS & ESGs</h3>
-          </div>
-        </div>
-        <div class="cs_height_64 cs_height_lg_50"></div>
-        <div class="row cs_gap_y_30">
-          <div class="col-xxl-4 col-xl-5">
-            <div class="cs_img_box cs_style_2">
-              <img src="assets/img/cacbon/vision_image_1.png" alt="Hình ảnh minh họa Tầm nhìn" class="cs_radius_20 w-100">
-            </div>
-          </div>
-          <div class="col-xxl-8 col-xl-7">
-            <div class="cs_accordians cs_style_1">
-              
-              <div class="cs_accordian active">
-                <div class="cs_accordian_head">
-                  <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Nhà phát triển R&D & Vùng trồng Công nghiệp</p>
-                  <span class="cs_accordian_toggle cs_heading_color">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z" fill="currentColor"/>
-                    </svg>                      
-                  </span>
-                </div>
-                <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
-                  <p>AFS hướng tới trở thành nhà phát triển trong lĩnh vực R&D và sản xuất giống cây trồng, phát triển vùng trồng quy mô công nghiệp gắn liền với tinh chế theo các tiêu chuẩn quốc tế.</p>
-                </div>
-              </div><div class="cs_accordian">
-                <div class="cs_accordian_head">
-                  <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Công nghiệp Công nghệ cao và Chuỗi giá trị bền vững</p>
-                  <span class="cs_accordian_toggle cs_heading_color">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z" fill="currentColor"/>
-                    </svg>                      
-                  </span>
-                </div>
-                <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
-                  <p>Phát triển công nghiệp công nghệ cao ngành nông nghiệp và lâm nghiệp, góp phần xây dựng chuỗi giá trị xanh và bền vững.</p>
-                </div>
-              </div><div class="cs_accordian">
-                <div class="cs_accordian_head">
-                  <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Tư vấn Chuyên nghiệp ESG & Thị trường Carbon</p>
-                  <span class="cs_accordian_toggle cs_heading_color">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z" fill="currentColor"/>
-                    </svg>                      
-                  </span>
-                </div>
-                <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
-                  <p>AFS & ESGs là Nhà Tư vấn chuyên nghiệp trong lĩnh vực ESG và thị trường khí nhà kính.</p>
-                </div>
-              </div></div>
           </div>
         </div>
       </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <section class="">
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_section_heading cs_style_2 cs_color_1">
-          <div class="cs_section_right">
-            <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">AFS & ESGs</h3>
+    </div>
+  </header>
+  <div class="cs_header_form_wrap cs_center">
+    <div class="cs_header_form_overlay"></div>
+    <form action="#" class="cs_header_form">
+      <input type="text" class="cs_header_form_input" placeholder="Search...">
+      <button type="button" class="cs_header_form_btn cs_center">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path
+              d="M19.7556 18.5774L14.0682 12.89C15.1699 11.5292 15.8332 9.8 15.8332 7.91669C15.8332 3.55174 12.2815 9.15527e-05 7.91656 9.15527e-05C3.55161 9.15527e-05 0 3.5517 0 7.91666C0 12.2816 3.55165 15.8333 7.9166 15.8333C9.7999 15.8333 11.5291 15.1699 12.8899 14.0683L18.5773 19.7557C18.7398 19.9182 18.9531 19.9999 19.1665 19.9999C19.3798 19.9999 19.5932 19.9182 19.7557 19.7557C20.0815 19.4299 20.0815 18.9032 19.7556 18.5774ZM7.9166 14.1666C4.46996 14.1666 1.66666 11.3633 1.66666 7.91666C1.66666 4.47001 4.46996 1.66672 7.9166 1.66672C11.3632 1.66672 14.1665 4.47001 14.1665 7.91666C14.1665 11.3633 11.3632 14.1666 7.9166 14.1666Z"
+              fill="currentColor" />
+          </g>
+          <defs>
+            <clipPath>
+              <rect width="20" height="20" fill="currentColor" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </form>
+  </div>
+  <!-- End Header Section -->
+  <!-- Start Hero Section -->
+  <section class="cs_hero cs_style_1 cs_heading_bg cs_white_color">
+    <div class="container">
+      <div class="cs_hero_in">
+        <div class="cs_hero_text">
+          <h1 class="cs_hero_title cs_fs_100 cs_normal cs_mb_12 cs_white_color cs_gradient_color_1 wow fadeInUp"><b>Nhà
+              tư vấn <br> tín chỉ carbon</b></h1>
+          <p class="cs_hero_subtitle cs_fs_20 cs_mb_32 cs_opacity_7_5">AFS là đơn vị tiên phong tại Đông Nam Á triển
+            khai các dự án trồng rừng, nhà máy Biochar – Biomass và tư vấn ESG để hình thành quỹ dự trữ Carbon đạt chuẩn
+            quốc tế.
+          </p>
+          <div class="cs_hero_btns">
+            <a href="services.html" class="cs_btn cs_style_1 cs_bold cs_heading_color cs_white_bg wow fadeInLeft">Tư vấn
+              ngay</a>
+            <a href="projects.html" class="cs_btn cs_style_2 cs_bold cs_white_color wow fadeInRight">Khám phá các dự
+              án</a>
           </div>
-          <h2 class="cs_section_title cs_fs_80 mb-0">SỨ MỆNH <br><span></span></h2> 
-          
         </div>
-        <div class="cs_height_64 cs_height_lg_50"></div>
-        <div class="row cs_gap_y_30">
-          
-          <div class="col-xxl-8 col-xl-7">
-            <div class="cs_accordians cs_style_custom">
-              
-              <div class="cs_accordian active">
-                <div class="cs_accordian_head">
-                  <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Phát triển Nguồn lực Sinh học và Vùng trồng</p>
-                  <span class="cs_accordian_toggle cs_heading_color">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z" fill="currentColor"/>
-                    </svg>                      
-                  </span>
-                </div>
-                <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
-                  <p>Mang cây trồng chất lượng cao, thích nghi đa dạng sinh học tới từng miền đất. Phát triển các vùng trồng quy mô công nghiệp mang tầm quốc tế.</p>
-                </div>
-              </div><div class="cs_accordian">
-                <div class="cs_accordian_head">
-                  <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Sản xuất và Xuất khẩu theo Chuỗi giá trị Xanh</p>
-                  <span class="cs_accordian_toggle cs_heading_color">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z" fill="currentColor"/>
-                    </svg>                      
-                  </span>
-                </div>
-                <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
-                  <p>Sản xuất các sản phẩm theo chuỗi giá trị, định hướng tăng trưởng xanh. Đưa sản phẩm Việt Nam chất lượng cao đến với thế giới.</p>
-                </div>
-              </div><div class="cs_accordian">
-                <div class="cs_accordian_head">
-                  <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Nghiên cứu Công nghệ cao và Tinh chế Nông Lâm sản</p>
-                  <span class="cs_accordian_toggle cs_heading_color">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z" fill="currentColor"/>
-                    </svg>                      
-                  </span>
-                </div>
-                <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
-                  <p>Nghiên cứu, ứng dụng và phát triển các ngành công nghiệp công nghệ cao trong chế biến, tinh chế nông lâm sản để tối đa hóa giá trị.</p>
-                </div>
-              </div><div class="cs_accordian">
-                <div class="cs_accordian_head">
-                  <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Tư vấn, Thiết lập và Tiêu chuẩn hóa Quốc tế (ESG/Carbon/Kinh tế Tuần hoàn)</p>
-                  <span class="cs_accordian_toggle cs_heading_color">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z" fill="currentColor"/>
-                    </svg>                      
-                  </span>
-                </div>
-                <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
-                  <p>Tư vấn, Thiết lập nền tảng ESG và tiêu chuẩn hóa quốc tế cho các dự án phát triển xanh, tín chỉ carbon và kinh tế tuần hoàn, góp phần thúc đẩy phát triển bền vững quốc gia.</p>
-                </div>
-              </div></div>
-          </div>
-          
-          <div class="col-xxl-4 col-xl-5">
-            <div class="cs_img_box cs_style_2">
-              <img src="assets/img/cacbon/vision_image_1.png" alt="Hình ảnh minh họa Sứ mệnh" class="cs_radius_20 w-100">
+        <div class="cs_hero_funfact_wrap wow fadeInRight">
+          <div class="cs_hero_funfact">
+            <h3 class="cs_fs_24 cs_bold cs_white_color mb-0">500+</h3>
+            <p class="cs_fs_20 cs_white_color cs_opacity_7_5 cs_mb_16">Khách hàng hài lòng</p>
+            <div class="cs_circle_group">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-          
+        </div>
+        <div class="cs_hero_box wow fadeInUp">
+          <div class="cs_hero_box_icon cs_mb_29">
+            <svg width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 0C4.93447 0 0 4.97132 0 11.0821C0 13.0939 0.895529 15.2575 0.933059 15.3488C1.22229 16.0404 1.793 17.1147 2.20453 17.7445L9.74665 29.2575C10.0553 29.7295 10.5121 30 11 30C11.4879 30 11.9447 29.7295 12.2534 29.2581L19.7961 17.7445C20.2083 17.1147 20.7784 16.0404 21.0676 15.3488C21.1051 15.2581 22 13.0945 22 11.0821C22 4.97132 17.0655 0 11 0ZM19.8744 14.8429C19.6162 15.4628 19.085 16.4622 18.7155 17.0267L11.1728 28.5404C11.0239 28.7679 10.9767 28.7679 10.8279 28.5404L3.28512 17.0267C2.91565 16.4622 2.38441 15.4622 2.12624 14.8422C2.11523 14.8155 1.29412 12.824 1.29412 11.0821C1.29412 5.69035 5.64818 1.30378 11 1.30378C16.3518 1.30378 20.7059 5.69035 20.7059 11.0821C20.7059 12.8266 19.8828 14.8233 19.8744 14.8429Z"
+                fill="currentColor" />
+              <path
+                d="M11.0003 5.21578C7.78893 5.21578 5.17676 7.84811 5.17676 11.0828C5.17676 14.3175 7.78893 16.9498 11.0003 16.9498C14.2116 16.9498 16.8238 14.3175 16.8238 11.0828C16.8238 7.84811 14.2116 5.21578 11.0003 5.21578ZM11.0003 15.646C8.50329 15.646 6.47088 13.5991 6.47088 11.0828C6.47088 8.56649 8.50329 6.51956 11.0003 6.51956C13.4973 6.51956 15.5297 8.56649 15.5297 11.0828C15.5297 13.5991 13.4973 15.646 11.0003 15.646Z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <h3 class="cs_hero_box_title cs_fs_24 cs_mb_12 cs_white_color">AFS Corporation</h3>
+          <p class="cs_hero_box_subtitle mb-0 cs_opacity_7_5">Số 677 Lạc Long Quân, Tây Hồ, Thành Phố Hà Nội, Việt Nam
+          </p>
+          <a href="projects.html" class="cs_arrow_btn cs_hero_box_btn cs_center cs_heading_bg cs_white_color">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z"
+                fill="currentColor" />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <!-- Start Values Section -->
+    </div>
+    <div class="cs_hero_bg">
+      <div class="cs_slider cs_style_1">
+        <div class="cs_slider_container" data-autoplay="1" data-loop="1" data-speed="1200" data-center="0"
+          data-variable-width="0" data-slides-per-view="1">
+          <div class="cs_slider_wrapper">
+            <div class="cs_slide">
+              <div class="cs_hero_bg_in cs_bg_filed"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_1.jpg');">
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_hero_bg_in cs_bg_filed"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_2.jpeg');">
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_hero_bg_in cs_bg_filed"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_3.jpeg');">
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_hero_bg_in cs_bg_filed"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/cacbon/hero_bg_4.jpeg');">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_pagination_1_wrap">
+          <div class="container">
+            <div class="cs_pagination_1_in">
+              <div class="cs_slider_number cs_style_1 cs_white_color cs_bold"></div>
+              <div class="cs_pagination cs_style_1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+  <section class="cs_gray_bg">
     <div class="cs_height_100 cs_height_lg_70"></div>
     <div class="container">
-      <div class="cs_values_card cs_style_1">
-        <div class="cs_values_card_left">
-          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">Sứ mệnh</h3>
+      <div class="cs_section_heading cs_style_2 cs_color_1">
+        <h2 class="cs_section_title cs_fs_80 mb-0">TẦM NHÌN <br><span></span></h2>
+        <div class="cs_section_right">
+          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">AFS & ESGs</h3>
         </div>
-        <div class="cs_values_card_left">
-          <ul class="cs_values cs_mp_0 cs_heading_color cs_fs_20">
+      </div>
+      <div class="cs_height_64 cs_height_lg_50"></div>
+      <div class="row cs_gap_y_30">
+        <div class="col-xxl-4 col-xl-5">
+          <div class="cs_img_box cs_style_2">
+            <img src="assets/img/cacbon/vision_image_1.png" alt="Hình ảnh minh họa Tầm nhìn" class="cs_radius_20 w-100">
+          </div>
+        </div>
+        <div class="col-xxl-8 col-xl-7">
+          <div class="cs_accordians cs_style_1">
+
+            <div class="cs_accordian active">
+              <div class="cs_accordian_head">
+                <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Nhà phát triển R&D & Vùng trồng Công
+                  nghiệp</p>
+                <span class="cs_accordian_toggle cs_heading_color">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
+                <p>AFS hướng tới trở thành nhà phát triển trong lĩnh vực R&D và sản xuất giống cây trồng, phát triển
+                  vùng trồng quy mô công nghiệp gắn liền với tinh chế theo các tiêu chuẩn quốc tế.</p>
+              </div>
+            </div>
+            <div class="cs_accordian">
+              <div class="cs_accordian_head">
+                <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Công nghiệp Công nghệ cao và Chuỗi giá
+                  trị bền vững</p>
+                <span class="cs_accordian_toggle cs_heading_color">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
+                <p>Phát triển công nghiệp công nghệ cao ngành nông nghiệp và lâm nghiệp, góp phần xây dựng chuỗi giá trị
+                  xanh và bền vững.</p>
+              </div>
+            </div>
+            <div class="cs_accordian">
+              <div class="cs_accordian_head">
+                <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Tư vấn Chuyên nghiệp ESG & Thị trường
+                  Carbon</p>
+                <span class="cs_accordian_toggle cs_heading_color">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
+                <p>AFS & ESGs là Nhà Tư vấn chuyên nghiệp trong lĩnh vực ESG và thị trường khí nhà kính.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <section class="">
+    <div class="cs_height_100 cs_height_lg_70"></div>
+    <div class="container">
+      <div class="cs_section_heading cs_style_2 cs_color_1">
+        <div class="cs_section_right">
+          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">AFS & ESGs</h3>
+        </div>
+        <h2 class="cs_section_title cs_fs_80 mb-0">SỨ MỆNH <br><span></span></h2>
+
+      </div>
+      <div class="cs_height_64 cs_height_lg_50"></div>
+      <div class="row cs_gap_y_30">
+
+        <div class="col-xxl-8 col-xl-7">
+          <div class="cs_accordians cs_style_custom">
+
+            <div class="cs_accordian active">
+              <div class="cs_accordian_head">
+                <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Phát triển Nguồn lực Sinh học và Vùng
+                  trồng</p>
+                <span class="cs_accordian_toggle cs_heading_color">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
+                <p>Mang cây trồng chất lượng cao, thích nghi đa dạng sinh học tới từng miền đất. Phát triển các vùng
+                  trồng quy mô công nghiệp mang tầm quốc tế.</p>
+              </div>
+            </div>
+            <div class="cs_accordian">
+              <div class="cs_accordian_head">
+                <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Sản xuất và Xuất khẩu theo Chuỗi giá trị
+                  Xanh</p>
+                <span class="cs_accordian_toggle cs_heading_color">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
+                <p>Sản xuất các sản phẩm theo chuỗi giá trị, định hướng tăng trưởng xanh. Đưa sản phẩm Việt Nam chất
+                  lượng cao đến với thế giới.</p>
+              </div>
+            </div>
+            <div class="cs_accordian">
+              <div class="cs_accordian_head">
+                <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Nghiên cứu Công nghệ cao và Tinh chế
+                  Nông Lâm sản</p>
+                <span class="cs_accordian_toggle cs_heading_color">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
+                <p>Nghiên cứu, ứng dụng và phát triển các ngành công nghiệp công nghệ cao trong chế biến, tinh chế nông
+                  lâm sản để tối đa hóa giá trị.</p>
+              </div>
+            </div>
+            <div class="cs_accordian">
+              <div class="cs_accordian_head">
+                <p class="cs_accordian_title cs_fs_20 cs_bold cs_heading_color">Tư vấn, Thiết lập và Tiêu chuẩn hóa Quốc
+                  tế (ESG/Carbon/Kinh tế Tuần hoàn)</p>
+                <span class="cs_accordian_toggle cs_heading_color">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0001 11.2501C9.77627 11.2501 9.55227 11.1645 9.38143 10.9937L0.63143 2.24368C0.289523 1.90177 0.289523 1.34812 0.63143 1.00643C0.973336 0.664742 1.52699 0.664523 1.86868 1.00643L10.0001 9.1378L18.1314 1.00643C18.4733 0.664523 19.027 0.664523 19.3687 1.00643C19.7104 1.34834 19.7106 1.90199 19.3687 2.24368L10.6187 10.9937C10.4478 11.1645 10.2238 11.2501 10.0001 11.2501Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="cs_accordian_body cs_heading_color cs_opacity_7_5">
+                <p>Tư vấn, Thiết lập nền tảng ESG và tiêu chuẩn hóa quốc tế cho các dự án phát triển xanh, tín chỉ
+                  carbon và kinh tế tuần hoàn, góp phần thúc đẩy phát triển bền vững quốc gia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4 col-xl-5">
+          <div class="cs_img_box cs_style_2">
+            <img src="assets/img/cacbon/destiny_image.png" alt="Hình ảnh minh họa Sứ mệnh" class="cs_radius_20 w-100">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <!-- Start Services Section -->
+  <section>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+    <div class="container">
+      <div class="cs_section_heading cs_style_3">
+        <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0 wow fadeInUp">DỊCH VỤ</h3>
+        <div class="cs_section_right">
+          <a href="services.html" class="cs_btn cs_style_2 cs_bold cs_heading_color">Xem thêm</a>
+        </div>
+      </div>
+      <div class="cs_height_64 cs_height_lg_50"></div>
+      <div class="cs_card_1_group">
+        <div class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed active wow fadeInLeft"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_1.png');">
+          <div class="cs_card_top">
+            <div class="cs_card_tags">
+              <a href="index.html" class="cs_card_tag">Trang chủ</a>
+              <a href="#" class="cs_card_tag">Quỹ Carbon</a>
+            </div>
+          </div>
+          <div class="cs_card_bottom">
+            <h2 class="cs_card_title cs_white_color cs_fs_32">PHÁT TRIỂN QUỸ DỰ TRỮ CARBON</h2>
+            <p class="cs_card_subtitle mb-0 cs_white_color">Triển khai các dự án dự trữ carbon từ lâm nghiệp và nông
+              nghiệp tái sinh, kiến tạo các tín chỉ carbon chất lượng cao mang lại lợi ích kép về kinh tế và môi trường.
+            </p>
+          </div>
+          <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z"
+                fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_2_1.jpg');">
+          <div class="cs_card_top">
+            <div class="cs_card_tags">
+              <a href="index.html" class="cs_card_tag">Trang chủ</a>
+              <a href="#" class="cs_card_tag">Tư vấn</a>
+              <a href="#" class="cs_card_tag">Thẩm định</a>
+              <a href="#" class="cs_card_tag">ESG</a>
+            </div>
+          </div>
+          <div class="cs_card_bottom">
+            <h2 class="cs_card_title cs_white_color cs_fs_32">TƯ VẤN & THẨM ĐỊNH ESG/CARBON</h2>
+            <p class="cs_card_subtitle mb-0 cs_white_color">Đồng hành cùng doanh nghiệp xây dựng lộ trình ESG và phát
+              triển dự án carbon, từ bước đánh giá ban đầu đến khi được thẩm định và cấp chứng chỉ quốc tế.</p>
+          </div>
+          <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z"
+                fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_3.jpg');">
+          <div class="cs_card_top">
+            <div class="cs_card_tags">
+              <a href="index.html" class="cs_card_tag">Trang chủ</a>
+              <a href="#" class="cs_card_tag">Giao dịch</a>
+            </div>
+          </div>
+          <div class="cs_card_bottom">
+            <h2 class="cs_card_title cs_white_color cs_fs_32">GIAO DỊCH & UỶ THÁC TÍN CHỈ CARBON</h2>
+            <p class="cs_card_subtitle mb-0 cs_white_color">Kết nối chủ dự án và nhà đầu tư, cung cấp dịch vụ giao dịch
+              và ủy thác tín chỉ carbon một cách chuyên nghiệp, minh bạch và hiệu quả.</p>
+          </div>
+          <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z"
+                fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed wow fadeInRight"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_4.jpg');">
+          <div class="cs_card_top">
+            <div class="cs_card_tags">
+              <a href="index.html" class="cs_card_tag">Trang chủ</a>
+              <a href="#" class="cs_card_tag">Đào tạo</a>
+            </div>
+          </div>
+          <div class="cs_card_bottom">
+            <h2 class="cs_card_title cs_white_color cs_fs_32">ĐÀO TẠO ESG & KHUNG PHÁP LÝ</h2>
+            <p class="cs_card_subtitle mb-0 cs_white_color">Trang bị cho doanh nghiệp kiến thức toàn diện về ESG và các
+              khung pháp lý liên quan (Nghị định 06, CBAM), giúp tự tin tuân thủ và xây dựng chiến lược bền vững.</p>
+          </div>
+          <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z"
+                fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <!-- End Services Section -->
+    <!-- Start Production & Supply Section -->
+    <section class="cs_gray_bg">
+      <div class="cs_height_100 cs_height_lg_70"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_2 cs_color_1">
+          <h2 class="cs_section_title cs_fs_80 mb-0">SẢN XUẤT & <br><span>CUNG ỨNG</span></h2>
+          <div class="cs_section_right">
+            <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">NĂNG LỰC CỐT LÕI</h3>
+          </div>
+        </div>
+        <div class="cs_height_64 cs_height_lg_50"></div>
+        <!-- Item 1 -->
+        <div class="row align-items-center cs_gap_y_40">
+          <div class="col-lg-6 wow fadeInLeft">
+            <img src="assets/img/cacbon/service_manufacter_1.png" alt="Giống cây trồng" class="cs_production_supply_img">
+          </div>
+          <div class="col-lg-6">
+            <div class="cs_pl_40">
+              <h3 class="cs_fs_32 cs_mb_24">Giống & Vật tư Nông nghiệp</h3>
+              <p class="cs_fs_20 cs_mb_12"><b>Giống cây lâm & nông nghiệp:</b> Cung cấp giống tre công nghiệp, keo lai, sao đen, ngô, sắn... với hệ thống vườn ươm công suất hàng triệu cây/năm, sẵn sàng cho các dự án quy mô lớn.</p>
+              <p class="cs_fs_20 mb-0"><b>Phân bón & BVTV:</b> Sản xuất và cung ứng phân bón, thuốc BVTV hữu cơ, vi sinh, thân thiện với môi trường, đảm bảo đáp ứng tiêu chí ESG trong chuỗi cung ứng.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_100 cs_height_lg_70"></div>
+        <!-- Item 2 -->
+        <div class="row align-items-center cs_gap_y_40 flex-row-reverse">
+          <div class="col-lg-6 wow fadeInRight">
+            <img src="assets/img/cacbon/service_manufacter_2.png" alt="Sản phẩm bền vững" class="cs_production_supply_img">
+          </div>
+          <div class="col-lg-6">
+            <div class="cs_pr_40">
+              <h3 class="cs_fs_32 cs_mb_24">Sản phẩm Bền vững & Kinh tế Tuần hoàn</h3>
+              <p class="cs_fs_20 cs_mb_12"><b>Than sinh học (BioChar):</b> Tận dụng phụ phẩm tre, gỗ để sản xuất BioChar, giúp cải tạo đất, tăng khả năng giữ nước và "khóa" carbon lâu dài. Có thể phát hành tín chỉ carbon theo phương pháp biochar quốc tế.</p>
+              <p class="cs_fs_20 mb-0"><b>IPM:</b> Triển khai chương trình quản lý dịch hại tổng hợp (IPM) nhằm giảm thiểu việc sử dụng hóa chất độc hại, bảo vệ hệ sinh thái.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_100 cs_height_lg_70"></div>
+        <!-- Item 3 -->
+        <div class="row align-items-center cs_gap_y_40">
+          <div class="col-lg-6 wow fadeInLeft">
+            <img src="assets/img/cacbon/service_manufacter_3.png" alt="Lương thực thực phẩm" class="cs_production_supply_img">
+          </div>
+          <div class="col-lg-6">
+            <div class="cs_pl_40">
+              <h3 class="cs_fs_32 cs_mb_24">Sản xuất & Cung ứng Lương thực, Thực phẩm</h3>
+              <p class="cs_fs_20 mb-0">Cung cấp các sản phẩm lương thực (gạo, ngô, sắn) và thực phẩm chế biến (rau củ quả sấy giòn, sấy dẻo...) áp dụng tiêu chuẩn quốc tế, phù hợp với tiêu chuẩn ESG và giảm phát thải.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_100 cs_height_lg_70"></div>
+    </section>
+    <!-- End Production & Supply Section -->
+
+  <!-- Start Working Process -->
+  <section class="cs_heading_bg">
+    <div class="cs_height_100 cs_height_lg_70"></div>
+    <div class="container">
+      <div class="cs_section_heading cs_style_2">
+        <h2 class="cs_section_title cs_white_color cs_fs_80 mb-0 wow fadeInUp">QUY TRÌNH CỦA CHÚNG TÔI</h2>
+        <div class="cs_section_right">
+          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0 cs_white_color">Our Process</h3>
+        </div>
+      </div>
+      <div class="cs_height_64 cs_height_lg_50"></div>
+      <div class="cs_card_3_wrap">
+        <div class="cs_card cs_style_3">
+          <div class="cs_card_in">
+            <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">01 | Khách hàng liên <br> hệ – ký NDA</h3>
+            <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Tiếp nhận yêu cầu và ký kết Thỏa thuận Bảo mật thông
+              tin (NDA) để khởi động dự án một cách an toàn.</p>
+          </div>
+        </div>
+        <div class="cs_card cs_style_3">
+          <div class="cs_card_in">
+            <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">02 | Khảo sát thực địa, <br>phân tích số liệu</h3>
+            <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Tiến hành khảo sát thực địa chuyên sâu và phân tích dữ
+              liệu để làm cơ sở vững chắc cho việc phát triển dự án.</p>
+          </div>
+        </div>
+        <div class="cs_card cs_style_3">
+          <div class="cs_card_in">
+            <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">03 | Soạn thảo & đệ trình tài liệu</h3>
+            <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Biên soạn bộ hồ sơ dự án (PDD) hoàn chỉnh theo tiêu
+              chuẩn quốc tế và đệ trình tới các đơn vị thẩm định.</p>
+          </div>
+        </div>
+        <div class="cs_card cs_style_3">
+          <div class="cs_card_in">
+            <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">04 | Kết nối các bên <br>thẩm định/phê duyệt </h3>
+            <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Làm việc với các đơn vị thẩm định độc lập, theo dõi và
+              hỗ trợ quá trình cho đến khi dự án được chính thức phê duyệt.</p>
+          </div>
+        </div>
+        <div class="cs_card cs_style_3">
+          <div class="cs_card_in">
+            <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">05 | Bàn giao tín chỉ carbon cho thị trường</h3>
+            <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Khi dự án được phê duyệt, tín chỉ carbon sẽ được phát
+              hành và niêm yết, sẵn sàng cho việc giao dịch trên thị trường.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <!-- End Working Process -->
+  <!-- Start Team Member Section -->
+  <section>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+    <div class="container">
+      <div class="cs_slider cs_style_1 cs_slider_gap_24">
+        <div class="cs_section_heading cs_style_2 cs_color_1">
+          <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown">ĐỘI NGŨ<br><span>CỦA</span> CHÚNG TÔI</h2>
+          <div class="cs_section_right">
+            <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">WORKS</h3>
+            <div class="cs_slider_arrows cs_style_4 cs_hide_lg">
+              <div class="cs_left_arrow cs_heading_color">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.499953 9.00005C0.499953 8.80823 0.573265 8.61623 0.719703 8.4698L8.2197 0.969797C8.51277 0.676734 8.98733 0.676734 9.2802 0.969797C9.57308 1.26286 9.57327 1.73742 9.2802 2.0303L2.31045 9.00005L9.2802 15.9698C9.57327 16.2629 9.57327 16.7374 9.2802 17.0303C8.98714 17.3232 8.51258 17.3234 8.2197 17.0303L0.719703 9.5303C0.573265 9.38386 0.499953 9.19186 0.499953 9.00005Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <div class="cs_slider_number cs_style_2 cs_bold"></div>
+              <div class="cs_right_arrow cs_heading_color">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.50005 8.99995C9.50005 9.19177 9.42673 9.38377 9.2803 9.5302L1.7803 17.0302C1.48723 17.3233 1.01267 17.3233 0.719797 17.0302C0.426922 16.7371 0.426734 16.2626 0.719797 15.9697L7.68955 8.99995L0.719797 2.0302C0.426734 1.73714 0.426734 1.26258 0.719797 0.969702C1.01286 0.676826 1.48742 0.67664 1.7803 0.969702L9.2803 8.4697C9.42673 8.61614 9.50005 8.80814 9.50005 8.99995Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_64 cs_height_lg_50"></div>
+        <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0"
+          data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2"
+          data-md-slides="3" data-lg-slides="4" data-add-slides="4">
+          <div class="cs_slider_wrapper wow fadeInUp">
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="assets/img/team_member_betty.jpg" alt="Betty Pallard" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Betty Pallard</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Người sáng lập ESGs Climate Consulting</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Phó Chủ tịch Ban tăng trưởng xanh, đồng sáng lập Ban tài chính khí hậu, chuyên gia tài chính khí hậu.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="Spencer Phillips" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Spencer Phillips</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Nhà sáng lập Key-Log Economics</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Thành viên Hội đồng Nhà Trắng về chất lượng môi trường, cựu Phó Chủ tịch nghiên cứu sinh thái và kinh tế.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="Markus Klemmer" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Markus Klemmer</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Chủ tịch Planetzero.earth, Tổng Giám đốc ESGS</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Chuyên gia về khử cacbon, tích tụ carbon, hạ tầng phát triển bền vững và quản lý chất thải.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="assets/img/team_member_chinguyen.jpg" alt="Chi Nguyen" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Chi Nguyen</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Giám đốc ESGS Việt Nam</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Chuyên gia tích hợp bền vững ESG.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="Cuong Nguyen" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Cuong Nguyen</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Cựu Tham tán Thương mại Việt Nam tại Anh và Bỉ</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Chuyên gia chính sách kinh tế và thị trường quốc tế.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="Le Xuan Phuong" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Le Xuan Phuong</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Phó Giáo sư ngành Lâm nghiệp</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Chuyên gia công nghệ gỗ, quản lý rừng bền vững và nghiên cứu vật liệu tre – gỗ.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="Tran Thai U.L." class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Tran Thai U.L.</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Chuyên gia môi trường và biến đổi khí hậu</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Nhà tư vấn CDM, chuyên gia phát triển năng lượng tái tạo và thị trường carbon.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="Ha Nguyen" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">Ha Nguyen</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Trưởng dự án nghiên cứu</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Phát triển thị trường carbon và phát triển bền vững, chuyên gia tư vấn chính sách thương mại quốc tế và WTO.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="PGS. TS Nguyễn Bá Ngãi" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">PGS. TS Nguyễn Bá Ngãi</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Nguyên Phó Tổng cục trưởng tổng cục Lâm nghiệp</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Phó Chủ Tịch Hội chủ rừng Việt Nam, Chuyên gia Carbon rừng.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="TS Phạm Cường" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">TS Phạm Cường</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Trưởng khoa Lâm nghiệp Đại học Nông Lâm Huế</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Chuyên gia về lâm sinh và môi trường rừng.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="PGS. TS Nguyễn Việt Long" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">PGS. TS Nguyễn Việt Long</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Học viện Nông nghiệp Việt Nam</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0">Chuyên gia về nông nghiệp bền vững.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="GS. Augustine Hà Tôn Vinh" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">GS. Augustine Hà Tôn Vinh</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Chuyên gia về kinh tế tuần hoàn</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0"></p>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slide">
+              <div class="cs_team_member cs_style_1">
+                <img src="#" alt="TS Erich Glaser" class="cs_team_member_img">
+                <div class="cs_team_member_info">
+                  <h3 class="cs_team_member_name cs_white_color cs_fs_20 cs_bold mb-0">TS Erich Glaser</h3>
+                  <p class="cs_team_member_designation cs_white_color cs_fs_20 mb-0">Chuyên gia Chế biến Gỗ</p>
+                  <p class="cs_team_member_desc cs_white_color mb-0"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_pagination cs_style_2 cs_show_lg"></div>
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <!-- End Team Member Section -->
+       <!-- Start Brand Section -->
+    <div class="cs_gray_bg">
+      <div class="cs_height_64 cs_height_lg_50"></div>
+      <div class="container">
+        <div class="cs_slider cs_style_1 cs_slider_gap_24">
+          <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="3" data-md-slides="5" data-lg-slides="6" data-add-slides="6">
+            <div class="cs_slider_wrapper">
+              <div class="cs_slide">
+                <div class="cs_brand cs_style_1">
+                  <img src="assets/img/brand_logo_1.svg" alt="">
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_brand cs_style_1">
+                  <img src="assets/img/brand_logo_2.svg" alt="">
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_brand cs_style_1">
+                  <img src="assets/img/brand_logo_3.svg" alt="">
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_brand cs_style_1">
+                  <img src="assets/img/brand_logo_4.svg" alt="">
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_brand cs_style_1">
+                  <img src="assets/img/brand_logo_5.svg" alt="">
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_brand cs_style_1">
+                  <img src="assets/img/brand_logo_6.svg" alt="">
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_brand cs_style_1">
+                  <img src="assets/img/brand_logo_3.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_64 cs_height_lg_50"></div>
+    </div>
+    <!-- End Brand Section -->
+  <!-- Start Works Section -->
+  <section>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+    <div class="container">
+      <div class="cs_section_heading cs_style_2 cs_color_1">
+        <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown" style="line-height: 120px;">HÀNH TRÌNH <span>KIẾN
+            TẠO</span> GIÁ TRỊ BỀN VỮNG CỦA <span>CHÚNG TÔI</span></h2>
+        <div class="cs_section_right">
+          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">WORKS</h3>
+        </div>
+      </div>
+      <div class="cs_height_64 cs_height_lg_50"></div>
+      <div class="cs_full_width_slider_section">
+        <div class="cs_slider cs_style_1 cs_slider_gap_24">
+          <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0"
+            data-variable-width="1" data-slides-per-view="1">
+            <div class="cs_slider_wrapper">
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_4.png">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Khu lâm nghiệp CNC Gia Lai</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Gia Lai (400ha)</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Trung tâm R&D và đào tạo, đồng bộ hóa từ nghiên cứu giống, ứng dụng công nghệ cao đến phát triển thị trường lâm sản và du lịch sinh thái.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_7.png">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Vùng canh tác nông nghiệp hiện đại</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Xã Ia Pia (2.935 ha)</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Mô hình trồng tre phục hồi rừng và canh tác nông nghiệp ngắn ngày, tạo nguồn thu, cải tạo đất và giảm phát thải, phù hợp lộ trình thị trường carbon.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_9_1.jpg">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Trồng tre nguyên liệu</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Việt Nam, Lào, Campuchia (≈ 35.000 ha)</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Hình thành vùng nguyên liệu tre xuyên biên giới, tạo chuỗi giá trị từ cây tre, sản phẩm công nghiệp đến tín chỉ carbon.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_10.jpg">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Cụm dự án mới</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Đa dạng</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Tập trung vào các mô hình: Trồng tre kết hợp sản xuất Biochar, phục hồi rừng nghèo kết hợp sinh kế, và xây dựng chuỗi cung ứng xanh toàn diện.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="cs_slider_arrows cs_style_3 cs_hide_lg">
+            <div class="cs_right_arrow cs_heading_color cs_fs_20 cs_center">
+              <span class="cs_center">NEXT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <!-- End Works Section -->
+  <!-- Start CTA Section -->
+  <section class="cs_cta cs_style_1 cs_heading_bg cs_bg_filed" data-src="assets/img/cacbon/cta_bg.jpg">
+    <div class="cs_height_100 cs_height_lg_70"></div>
+    <div class="container">
+      <div class="cs_cta_in">
+        <h2 class="cs_cta_title cs_fs_80 cs_white_color cs_mb_40 wow fadeInDown" style="line-height: 100px;">SẴN SÀNG ĐỂ
+          <br>ĐƯỢC TƯ VẤN ?
+        </h2>
+        <a href="contact.html" class="cs_btn cs_style_1 cs_bold cs_heading_color cs_white_bg wow fadeInUp">Liên hệ chúng
+          tôi</a>
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <!-- End CTA Section -->
+  <!-- Start Footer Section -->
+  <footer class="cs_footer cs_style_1">
+    <div class="container">
+      <div class="cs_footer_row">
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <div class="cs_text_widget">
+              <img width="200px" src="assets/img/cacbon/logo_footer.png" alt="Logo" class="wow zoomIn">
+              <p>Cập nhật các dự án và tin tức về carbon mới nhất của chúng tôi.</p>
+            </div>
+          </div>
+          <div class="cs_footer_widget">
+            <form action="#" class="cs_newsletter cs_style_1">
+              <input type="email" placeholder="Điền thông tin email của bạn..." class="cs_newsletter_input">
+              <button type="submit" class="cs_newsletter_btn cs_arrow_btn cs_white_bg cs_heading_color">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <h4 class="cs_footer_widget_title">HỖ TRỢ</h4>
+            <ul class="cs_footer_widget_menu cs_mp_0">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="">HƯỚNG DẪN</a></li>
+              <li><a href="">THÔNG ĐIỆP</a></li>
+              <li><a href="">KHÁCH HÀNG</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <h4 class="cs_footer_widget_title">CÁC LIÊN KẾT</h4>
+            <ul class="cs_footer_widget_menu cs_mp_0">
+              <li><a href="about.html">VỀ CHÚNG TÔI</a></li>
+              <li><a href="gallery.html">PHONG CẢNH</a></li>
+              <li><a href="projects.html">DỰ ÁN</a></li>
+              <li><a href="blog.html">CÁC BÀI VIẾT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs_footer_col">
+          <div class="cs_footer_widget">
+            <h4 class="cs_footer_widget_title">DỊCH VỤ</h4>
+            <ul class="cs_footer_widget_menu cs_mp_0">
+              <li><a href="service-details.html">PHÁT TRIỂN QUỸ DỰ TRỮ CARBON</a></li>
+              <li><a href="service-details.html">TƯ VẤN & THẨM ĐỊNH ESG/CARBON</a></li>
+              <li><a href="service-details.html">GIAO DỊCH & UỶ THÁC TÍN CHỈ CARBON</a></li>
+              <li><a href="service-details.html">ĐÀO TẠO ESG & KHUNG PHÁP LÝ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cs_bottom_footer">
+        <div class="cs_bottom_footer_left wow fadeInLeft">
+          <div class="cs_copyright">Bản quyền © 2025 thuộc về AFS.</div>
+        </div>
+        <div class="cs_bottom_footer_right wow fadeInRight">
+          <ul class="cs_footer_links cs_mp_0">
             <li>
-              <span>Tái Tạo & Phục Hồi Hệ Sinh Thái</span>
-              <span class="cs_bold">01</span>
+              <a href="#">CHÍNH SÁCH BẢO MẬT</a>
             </li>
             <li>
-              <span>Thúc Đẩy Chuyển Đổi Xanh Toàn Diện</span>
-              <span class="cs_bold">02</span>
-            </li>
-            <li>
-              <span>Xây Dựng Thị Trường Carbon Minh Bạch</span>
-              <span class="cs_bold">03</span>
-            </li>
-            <li>
-              <span>Lan Tỏa Tri Thức & Nâng Cao Năng Lực</span>
-              <span class="cs_bold">04</span>
+              <a href="#">ĐIỀU KHOẢN & ĐIỀU KIỆN</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <!-- End Values Section -->
-    <!-- Start Feature Section -->
-    <section>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_section_heading cs_style_1">
-          <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown" style="line-height: 120px;">KIẾN TẠO GIÁ TRỊ TỪ TƯƠNG LAI XANH</h2>
-          <div class="cs_section_right">
-            <a href="services.html" class="cs_btn cs_style_1 cs_bold cs_heading_bg cs_white_color w-100 wow fadeInRight">Tìm Hiểu Thêm</a>
-          </div>
-        </div>
-        <div class="cs_height_64 cs_height_lg_50"></div>
-        <div class="row align-items-end cs_gap_y_50">
-          <div class="col-lg-4">
-            <div class="cs_img_box cs_style_1 wow fadeInLeft">
-              <img src="assets/img/cacbon/feature_thumb.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="row cs_gap_y_64">
-              <div class="col-sm-6">
-                <div class="cs_iconbox cs_style_1">
-                  <div class="cs_iconbox_icon cs_center cs_mb_24">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <h3 class="cs_fs_24 cs_mb_12">Tái Tạo & Phục Hồi Hệ Sinh Thái</h3>
-                  <p class="mb-0 cs_fs_20">Cam kết phục hồi thiên nhiên qua các dự án lâm nghiệp và nông nghiệp tái sinh, tạo ra giá trị carbon song hành cùng lợi ích về đa dạng sinh học và cộng đồng.</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="cs_iconbox cs_style_1">
-                  <div class="cs_iconbox_icon cs_center cs_mb_24">
-                    <i class="fa-solid fa-link"></i>
-                  </div>
-                  <h3 class="cs_fs_24 cs_mb_12">Thúc Đẩy Chuyển Đổi Xanh</h3>
-                  <p class="mb-0 cs_fs_20">Áp dụng tiêu chuẩn quốc tế (ESG) để đồng hành cùng doanh nghiệp, biến thách thức môi trường thành động lực tăng trưởng và lợi thế cạnh tranh bền vững.</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="cs_iconbox cs_style_1">
-                  <div class="cs_iconbox_icon cs_center cs_mb_24">
-                    <i class="fa-brands fa-buffer"></i>
-                  </div>
-                  <h3 class="cs_fs_24 cs_mb_12">Xây Dựng Thị Trường Carbon Minh Bạch</h3>
-                  <p class="mb-0 cs_fs_20">Kiến tạo thị trường tín chỉ carbon minh bạch, kết nối hiệu quả nguồn vốn tới các dự án có tác động cao nhằm thúc đẩy nền kinh tế carbon thấp.</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="cs_iconbox cs_style_1">
-                  <div class="cs_iconbox_icon cs_center cs_mb_24">
-                    <i class="fa-brands fa-ubuntu"></i>
-                  </div>
-                  <h3 class="cs_fs_24 cs_mb_12">Đào tạo ESG & khung pháp lý</h3>
-                  <p class="mb-0 cs_fs_20">Cung cấp tri thức chuyên sâu và kinh nghiệm thực tiễn, giúp các tổ chức làm chủ quy định và xây dựng chiến lược hiệu quả hướng tới mục tiêu Net-Zero.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <!-- End Feature Section -->
-    <!-- Start Working Process -->
-    <section class="cs_heading_bg">
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_section_heading cs_style_2">
-          <h2 class="cs_section_title cs_white_color cs_fs_80 mb-0 wow fadeInUp">QUY TRÌNH CỦA CHÚNG TÔI</h2>
-          <div class="cs_section_right">
-            <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0 cs_white_color">Our Process</h3>
-          </div>
-        </div>
-        <div class="cs_height_64 cs_height_lg_50"></div>
-        <div class="cs_card_3_wrap">
-  <div class="cs_card cs_style_3">
-    <div class="cs_card_in">
-      <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">01  | Khách hàng liên <br> hệ – ký NDA</h3>
-      <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Tiếp nhận yêu cầu và ký kết Thỏa thuận Bảo mật thông tin (NDA) để khởi động dự án một cách an toàn.</p>
-    </div>
-  </div>
-  <div class="cs_card cs_style_3" >
-    <div class="cs_card_in">
-      <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">02  |  Khảo sát thực địa, <br>phân tích số liệu</h3>
-      <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Tiến hành khảo sát thực địa chuyên sâu và phân tích dữ liệu để làm cơ sở vững chắc cho việc phát triển dự án.</p>
-    </div>
-  </div>
-  <div class="cs_card cs_style_3">
-    <div class="cs_card_in">
-      <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">03  |  Soạn thảo & đệ trình tài liệu</h3>
-      <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Biên soạn bộ hồ sơ dự án (PDD) hoàn chỉnh theo tiêu chuẩn quốc tế và đệ trình tới các đơn vị thẩm định.</p>
-    </div>
-  </div>
-  <div class="cs_card cs_style_3">
-    <div class="cs_card_in">
-      <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">04  |  Kết nối các bên <br>thẩm định/phê duyệt </h3>
-      <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Làm việc với các đơn vị thẩm định độc lập, theo dõi và hỗ trợ quá trình cho đến khi dự án được chính thức phê duyệt.</p>
-    </div>
-  </div>
-  <div class="cs_card cs_style_3">
-    <div class="cs_card_in">
-      <h3 class="cs_fs_24 cs_bold cs_white_color cs_mb_12">05  |  Bàn giao tín chỉ carbon cho thị trường</h3>
-      <p class="mb-0 cs_white_color cs_opacity_5 cs_fs_20">Khi dự án được phê duyệt, tín chỉ carbon sẽ được phát hành và niêm yết, sẵn sàng cho việc giao dịch trên thị trường.</p>
-    </div>
-  </div>
-  
-  </div>
-      </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <!-- End Working Process -->
-    <!-- Start Services Section -->
-    <section>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_section_heading cs_style_3">
-          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0 wow fadeInUp">DỊCH VỤ</h3>
-          <div class="cs_section_right">
-            <a href="services.html" class="cs_btn cs_style_2 cs_bold cs_heading_color">Xem thêm</a>
-          </div>
-        </div>
-        <div class="cs_height_64 cs_height_lg_50"></div>
-        <div class="cs_card_1_group">
-          <div  class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed active wow fadeInLeft" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_1.png');">
-            <div class="cs_card_top">
-              <div class="cs_card_tags">
-                <a href="index.html" class="cs_card_tag">Trang chủ</a>
-                <a href="#" class="cs_card_tag">Quỹ Carbon</a>
-              </div>
-            </div>
-            <div class="cs_card_bottom">
-              <h2 class="cs_card_title cs_white_color cs_fs_32">PHÁT TRIỂN QUỸ DỰ TRỮ CARBON</h2>
-              <p class="cs_card_subtitle mb-0 cs_white_color">Triển khai các dự án dự trữ carbon từ lâm nghiệp và nông nghiệp tái sinh, kiến tạo các tín chỉ carbon chất lượng cao mang lại lợi ích kép về kinh tế và môi trường.</p>
-            </div>
-            <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z" fill="currentColor"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_2_1.jpg');">
-            <div class="cs_card_top">
-              <div class="cs_card_tags">
-                <a href="index.html" class="cs_card_tag">Trang chủ</a>
-                <a href="#" class="cs_card_tag">Tư vấn</a>
-                <a href="#" class="cs_card_tag">Thẩm định</a>
-                <a href="#" class="cs_card_tag">ESG</a>
-              </div>
-            </div>
-            <div class="cs_card_bottom">
-              <h2 class="cs_card_title cs_white_color cs_fs_32">TƯ VẤN & THẨM ĐỊNH ESG/CARBON</h2>
-              <p class="cs_card_subtitle mb-0 cs_white_color">Đồng hành cùng doanh nghiệp xây dựng lộ trình ESG và phát triển dự án carbon, từ bước đánh giá ban đầu đến khi được thẩm định và cấp chứng chỉ quốc tế.</p>
-            </div>
-            <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z" fill="currentColor"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_3.jpg');">
-            <div class="cs_card_top">
-              <div class="cs_card_tags">
-                <a href="index.html" class="cs_card_tag">Trang chủ</a>
-                <a href="#" class="cs_card_tag">Giao dịch</a>
-              </div>
-            </div>
-            <div class="cs_card_bottom">
-              <h2 class="cs_card_title cs_white_color cs_fs_32">GIAO DỊCH & UỶ THÁC TÍN CHỈ CARBON</h2>
-              <p class="cs_card_subtitle mb-0 cs_white_color">Kết nối chủ dự án và nhà đầu tư, cung cấp dịch vụ giao dịch và ủy thác tín chỉ carbon một cách chuyên nghiệp, minh bạch và hiệu quả.</p>
-            </div>
-            <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z" fill="currentColor"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="cs_card cs_style_1 cs_hover_active cs_heading_bg cs_bg_filed wow fadeInRight" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/img/cacbon/service_thumb_4.jpg');">
-            <div class="cs_card_top">
-              <div class="cs_card_tags">
-                <a href="index.html" class="cs_card_tag">Trang chủ</a>
-                <a href="#" class="cs_card_tag">Đào tạo</a>
-              </div>
-            </div>
-            <div class="cs_card_bottom">
-              <h2 class="cs_card_title cs_white_color cs_fs_32">ĐÀO TẠO ESG & KHUNG PHÁP LÝ</h2>
-              <p class="cs_card_subtitle mb-0 cs_white_color">Trang bị cho doanh nghiệp kiến thức toàn diện về ESG và các khung pháp lý liên quan (Nghị định 06, CBAM), giúp tự tin tuân thủ và xây dựng chiến lược bền vững.</p>
-            </div>
-            <a href="service-details.html" class="cs_arrow_btn cs_size_lg cs_center cs_white_bg cs_heading_color">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z" fill="currentColor"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <!-- End Services Section -->
-    <!-- Start Testimonial Section -->
-    <section class="cs_gray_bg">
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="text-center">
-          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0 wow fadeInDown">TESTIMONIAL</h3>
-        </div>
-        <div class="cs_height_64 cs_height_lg_50"></div>
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1">
-            <div class="cs_slider cs_style_1">
-              <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="0" data-slides-per-view="1">
-                <div class="cs_slider_wrapper">
-                  <div class="cs_slide">
-                    <div class="cs_testimonial cs_style_1 text-center wow fadeInUp">
-                        <blockquote style="font-family: Arial, Helvetica, sans-serif;" class="cs_testimonial_blockquote cs_heading_color cs_fs_32 cs_bold cs_mb_48">Sự chuyên nghiệp đã giúp chúng tôi chuyển đổi từ những mục tiêu ESG mơ hồ thành một <span>lộ trình</span> hành động rõ ràng và <span>hiệu quả</span>. Họ không chỉ là nhà tư vấn, mà là một <span>đối tác</span> chiến lược thực thụ.</blockquote>
-                        <div class="cs_testimonial_meta">
-                            <h4 class="cs_testimonial_avatar cs_bold cs_fs_16 cs_mb_2">NGUYỄN BẢO LONG</h4>
-                            <p class="cs_testimonial_avatar_designation mb-0">Tổng Giám đốc, Công ty Cổ phần VinaMekong</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="cs_slide">
-                    <div class="cs_testimonial cs_style_1 text-center wow fadeInUp">
-                        <blockquote class="cs_testimonial_blockquote cs_heading_color cs_fs_32 cs_bold cs_mb_48">Họ đã biến <span>tiềm năng</span> đất rừng của chúng tôi thành một dự án tín chỉ carbon quốc tế, mở ra một <span>doanh thu</span> mới và bền vững. Năng lực và sự tận tâm của đội ngũ thực sự <span>vượt trội</span>.</blockquote>
-                        <div class="cs_testimonial_meta">
-                            <h4 class="cs_testimonial_avatar cs_bold cs_fs_16 cs_mb_2">TRẦN MINH TUẤN</h4>
-                            <p class="cs_testimonial_avatar_designation mb-0">Chủ tịch, Công ty TNHH Nông Lâm nghiệp An Phát</p>
-                        </div>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-              <div class="cs_slider_arrows cs_style_2">
-                <div class="cs_left_arrow cs_heading_color">
-                  <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.499953 9.00005C0.499953 8.80823 0.573265 8.61623 0.719703 8.4698L8.2197 0.969797C8.51277 0.676734 8.98733 0.676734 9.2802 0.969797C9.57308 1.26286 9.57327 1.73742 9.2802 2.0303L2.31045 9.00005L9.2802 15.9698C9.57327 16.2629 9.57327 16.7374 9.2802 17.0303C8.98714 17.3232 8.51258 17.3234 8.2197 17.0303L0.719703 9.5303C0.573265 9.38386 0.499953 9.19186 0.499953 9.00005Z" fill="currentColor"/>
-                  </svg>                                   
-                </div>
-                <div class="cs_right_arrow cs_heading_color">
-                  <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.50005 8.99995C9.50005 9.19177 9.42673 9.38377 9.2803 9.5302L1.7803 17.0302C1.48723 17.3233 1.01267 17.3233 0.719797 17.0302C0.426922 16.7371 0.426734 16.2626 0.719797 15.9697L7.68955 8.99995L0.719797 2.0302C0.426734 1.73714 0.426734 1.26258 0.719797 0.969702C1.01286 0.676826 1.48742 0.67664 1.7803 0.969702L9.2803 8.4697C9.42673 8.61614 9.50005 8.80814 9.50005 8.99995Z" fill="currentColor"/>
-                  </svg>                    
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <!-- End Testimonial Section -->
-    <!-- Start Works Section -->
-    <section>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_section_heading cs_style_2 cs_color_1">
-          <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown" style="line-height: 120px;">HÀNH TRÌNH <span>KIẾN TẠO</span> GIÁ TRỊ BỀN VỮNG CỦA <span>CHÚNG TÔI</span></h2>
-          <div class="cs_section_right">
-            <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">WORKS</h3>
-          </div>
-        </div>
-        <div class="cs_height_64 cs_height_lg_50"></div>
-        <div class="cs_full_width_slider_section">
-          <div class="cs_slider cs_style_1 cs_slider_gap_24">
-            <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="1" data-slides-per-view="1">
-              <div class="cs_slider_wrapper">
-                <div class="cs_slide">
-                  <div class="cs_card cs_style_4">
-                    <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_9_1.jpg"></div>
-                    <div class="cs_card_info">
-                      <ul class="cs_card_info_list cs_mp_0">
-                        <li>
-                          <p class="mb-0">Tên</p>
-                          <h3 class="mb-0 cs_fs_20 cs_bold">BAMBOO FOREST</h3>
-                        </li>
-                        <li>
-                          <p class="mb-0">Vị trí</p>
-                          <h3 class="mb-0 cs_fs_20 cs_bold">VIỆT NAM - CAMPUCHIA</h3>
-                        </li>
-                      </ul>
-                      <div class="cs_card_text">Dự án tạo tín chỉ sinh học từ hệ sinh thái rừng tre, tăng sinh kế người dân địa phương.</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cs_slide">
-                  <div class="cs_card cs_style_4">
-                    <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_10.jpg"></div>
-                    <div class="cs_card_info">
-                      <ul class="cs_card_info_list cs_mp_0">
-                        <li>
-                          <p class="mb-0">Tên</p>
-                          <h3 class="mb-0 cs_fs_20 cs_bold">NHÀ MÁY BIOCHAR - KAMPONG THOM</h3>
-                        </li>
-                        <li>
-                          <p class="mb-0">Vị trí</p>
-                          <h3 class="mb-0 cs_fs_20 cs_bold">CAMPUCHIA</h3>
-                        </li>
-                      </ul>
-                      <div class="cs_card_text">Chuyển hóa phụ phẩm nông nghiệp thành than sinh học phục vụ nông nghiệp tuần hoàn.</div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="cs_slider_arrows cs_style_3 cs_hide_lg">
-              <div class="cs_right_arrow cs_heading_color cs_fs_20 cs_center">
-                <span class="cs_center">NEXT</span>                  
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <!-- End Works Section -->
-    <!-- Start CTA Section -->
-    <section class="cs_cta cs_style_1 cs_heading_bg cs_bg_filed" data-src="assets/img/cacbon/cta_bg.jpg">
-      <div class="cs_height_100 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_cta_in">
-          <h2 class="cs_cta_title cs_fs_80 cs_white_color cs_mb_40 wow fadeInDown" style="line-height: 100px;">SẴN SÀNG ĐỂ <br>ĐƯỢC TƯ VẤN ?</h2>
-          <a href="contact.html" class="cs_btn cs_style_1 cs_bold cs_heading_color cs_white_bg wow fadeInUp">Liên hệ chúng tôi</a>
-        </div>
-      </div>
-      <div class="cs_height_100 cs_height_lg_70"></div>
-    </section>
-    <!-- End CTA Section -->
-    <!-- Start Footer Section -->
-    <footer class="cs_footer cs_style_1">
-      <div class="container">
-        <div class="cs_footer_row">
-          <div class="cs_footer_col">
-            <div class="cs_footer_widget">
-              <div class="cs_text_widget">
-                <img width="200px" src="assets/img/cacbon/logo_footer.png" alt="Logo" class="wow zoomIn">
-                <p>Cập nhật các dự án và tin tức về carbon mới nhất của chúng tôi.</p>
-              </div>
-            </div>
-            <div class="cs_footer_widget">
-              <form action="#" class="cs_newsletter cs_style_1">
-                <input type="email" placeholder="Điền thông tin email của bạn..." class="cs_newsletter_input">
-                <button type="submit" class="cs_newsletter_btn cs_arrow_btn cs_white_bg cs_heading_color">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z" fill="currentColor"/>
-                  </svg>                    
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="cs_footer_col">
-            <div class="cs_footer_widget">
-              <h4 class="cs_footer_widget_title">HỖ TRỢ</h4>
-              <ul class="cs_footer_widget_menu cs_mp_0">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="">HƯỚNG DẪN</a></li>
-                <li><a href="">THÔNG ĐIỆP</a></li>
-                <li><a href="">KHÁCH HÀNG</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="cs_footer_col">
-            <div class="cs_footer_widget">
-              <h4 class="cs_footer_widget_title">CÁC LIÊN KẾT</h4>
-              <ul class="cs_footer_widget_menu cs_mp_0">
-                <li><a href="about.html">VỀ CHÚNG TÔI</a></li>
-                <li><a href="gallery.html">PHONG CẢNH</a></li>
-                <li><a href="projects.html">DỰ ÁN</a></li>
-                <li><a href="blog.html">CÁC BÀI VIẾT</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="cs_footer_col">
-            <div class="cs_footer_widget">
-              <h4 class="cs_footer_widget_title">DỊCH VỤ</h4>
-              <ul class="cs_footer_widget_menu cs_mp_0">
-                <li><a href="service-details.html">PHÁT TRIỂN QUỸ DỰ TRỮ CARBON</a></li>
-                <li><a href="service-details.html">TƯ VẤN & THẨM ĐỊNH ESG/CARBON</a></li>
-                <li><a href="service-details.html">GIAO DỊCH & UỶ THÁC TÍN CHỈ CARBON</a></li>
-                <li><a href="service-details.html">ĐÀO TẠO ESG & KHUNG PHÁP LÝ</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="cs_bottom_footer">
-          <div class="cs_bottom_footer_left wow fadeInLeft">
-            <div class="cs_copyright">Bản quyền © 2025 thuộc về AFS.</div>
-          </div>
-          <div class="cs_bottom_footer_right wow fadeInRight">
-            <ul class="cs_footer_links cs_mp_0">
-              <li>
-                <a href="#">CHÍNH SÁCH BẢO MẬT</a>
-              </li>
-              <li>
-                <a href="#">ĐIỀU KHOẢN & ĐIỀU KIỆN</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer Section -->
-    <!-- Script -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/jquery.slick.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/isotope.pkg.min.js"></script>
-    <script src="assets/js/lightgallery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  </footer>
+  <!-- End Footer Section -->
+  <!-- Script -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/jquery.slick.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/isotope.pkg.min.js"></script>
+  <script src="assets/js/lightgallery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
