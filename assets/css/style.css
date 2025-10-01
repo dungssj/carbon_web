@@ -2063,6 +2063,75 @@ hr {
   right: 0;
 }
 
+/* Start Accordion */
+.cs_accordians.cs_style_custom { /* Đã đổi tên class */
+  margin-right: 60px; /* Đã đổi margin-left thành margin-right */
+}
+@media (max-width: 1400px) {
+  .cs_accordians.cs_style_custom {
+    margin-right: 20px; /* Đã đổi margin-left thành margin-right */
+  }
+}
+@media (max-width: 1199px) {
+  .cs_accordians.cs_style_custom {
+    margin-right: 0px; /* Đã đổi margin-left thành margin-right */
+  }
+}
+.cs_accordians.cs_style_custom .cs_accordian_title {
+  margin-bottom: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cs_accordians.cs_style_custom .cs_accordian_body {
+  padding: 0 0px 16px 0px;
+  margin-top: -8px;
+}
+.cs_accordians.cs_style_custom .cs_accordian_body p {
+  margin: 0;
+}
+.cs_accordians.cs_style_custom .cs_accordian_head {
+  padding: 24px 30px 24px 0px;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .cs_accordians.cs_style_custom .cs_accordian_head {
+    padding: 15px 25px 15px 0px;
+  }
+  .cs_accordians.cs_style_custom .cs_accordian_head svg {
+    width: 15px;
+  }
+}
+.cs_accordians.cs_style_custom .cs_accordian_head:hover .cs_accordian_title {
+  color: var(--heading-color);
+}
+.cs_accordians.cs_style_custom .cs_accordian {
+  border-bottom: 1px solid var(--heading-color);
+}
+.cs_accordians.cs_style_custom .cs_accordian.active .cs_accordian_head {
+  pointer-events: none;
+}
+.cs_accordians.cs_style_custom .cs_accordian.active .cs_accordian_toggle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.cs_accordians.cs_style_custom .cs_accordian:first-child .cs_accordian_head {
+  padding-top: 0;
+}
+.cs_accordians.cs_style_custom .cs_accordian:first-child .cs_accordian_toggle {
+  top: 8px;
+}
+.cs_accordians.cs_style_custom .cs_accordian_toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 33px;
+  right: 0;
+}
+
 .cs_accordian_border {
   border: 1px solid var(--border-color);
 }
