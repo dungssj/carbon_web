@@ -1707,26 +1707,30 @@ label {
 
 .cs_fs_80 {
   font-size: 80px;
-  line-height: 1.1em;
+  line-height: 100px;
 }
 @media (max-width: 1400px) {
   .cs_fs_80 {
     font-size: 70px;
+    line-height: 100px;
   }
 }
 @media (max-width: 1199px) {
   .cs_fs_80 {
     font-size: 60px;
+    line-height: 80px;
   }
 }
 @media (max-width: 767px) {
   .cs_fs_80 {
     font-size: 50px;
+    line-height: 70px;
   }
 }
 @media (max-width: 575px) {
   .cs_fs_80 {
     font-size: 48px;
+    line-height: 60px;
   }
 }
 
@@ -2061,6 +2065,26 @@ hr {
   position: absolute;
   top: 33px;
   right: 0;
+}
+
+@media (min-width: 1200px) {
+  .cs_accordians.cs_style_1 .cs_accordian_title {
+    font-size: 32px;
+  }
+  .cs_accordians.cs_style_1 .cs_accordian_body p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cs_accordians.cs_style_custom .cs_accordian_title {
+    font-size: 32px;
+  }
+  .cs_accordians.cs_style_custom .cs_accordian_body li {
+    font-size: 20px;
+    line-height: 40px;
+  }
 }
 
 /* Start Accordion */
@@ -4106,7 +4130,7 @@ hr {
     position: absolute;
     top: 27px;
     right: 30px;
-    color: var(--white-color);
+    color: var(--heading-color);
   }
   .cs_menu_toggle span,
   .cs_menu_toggle span:before,
@@ -4957,6 +4981,14 @@ hr {
   position: relative;
   z-index: 2;
 }
+.cs_iconbox.cs_style_1 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.cs_iconbox.cs_style_1 ul li {
+  margin-bottom: 8px;
+}
 
 .cs_iconbox.cs_style_2 {
   background-color: #e1ece3;
@@ -4993,6 +5025,19 @@ hr {
   max-width: 710px;
   margin-left: auto;
 }
+
+@media (min-width: 1300px) {
+  .cs_cta.cs_style_1.cs_type_1 .cs_cta_in {
+    margin-left: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cs_cta.cs_style_1.cs_type_1 .cs_cta_in {
+    margin-left: auto;
+  }
+}
+
 
 .cs_cta.cs_style_2 {
   height: 300px;
