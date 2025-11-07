@@ -39,7 +39,8 @@
 ----------------------------------------------------------------*/
 :root {
   --white-color: #f9fbf3;
-  --heading-color: #6abf7b;
+  /* --heading-color: #98696a; */
+    --heading-color: #6abf7b;
   --body-color: rgb(55 72 54 / 50%);
   --gray-color: #e1ece3;
   --border-color: #d9d9d9;
@@ -4007,6 +4008,11 @@ hr {
   .cs_site_header.cs_style_1.cs_color_1 .cs_header_icon_btn {
     color: var(--heading-color);
   }
+/* 
+    .cs_site_header.cs_style_1.cs_color_1.cs_sticky_active .cs_nav .cs_nav_list > li > a,
+  .cs_site_header.cs_style_1.cs_color_1.cs_sticky_active .cs_header_icon_btn {
+    color: #d90d0d;
+  } */
 }
 @media screen and (max-width: 1600px) {
   .cs_main_header .container-fluid {
