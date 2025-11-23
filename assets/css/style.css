@@ -3870,7 +3870,7 @@ hr {
   .cs_nav .cs_nav_list {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
-    display: flex !important;
+    /* display: flex !important; */
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: inherit;

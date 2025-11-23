@@ -16,6 +16,294 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/lightgallery.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      /* Organization Chart Styling */
+      :root {
+        --chart-line-color: #b1d8b7;
+      }
+      .org-chart-container {
+        overflow-x: auto;
+        padding: 40px 0;
+        background-color: var(--white-color);
+        /* Custom scrollbar */
+        scrollbar-width: thin;
+        scrollbar-color: var(--heading-color) var(--gray-color);
+        text-align: center;
+      }
+      .org-chart-container::-webkit-scrollbar {
+        height: 8px;
+      }
+      .org-chart-container::-webkit-scrollbar-track {
+        background: var(--gray-color);
+        border-radius: 4px;
+      }
+      .org-chart-container::-webkit-scrollbar-thumb {
+        background-color: var(--heading-color);
+        border-radius: 4px;
+      }
+
+      .org-chart {
+        display: inline-block;
+        min-width: 100%;
+      }
+      .org-chart ul {
+        padding-top: 20px;
+        position: relative;
+        transition: all 0.5s;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding-left: 0;
+      }
+      .org-chart li {
+        float: left;
+        text-align: center;
+        list-style-type: none;
+        position: relative;
+        padding: 20px 10px 0 10px;
+        transition: all 0.5s;
+      }
+      /* Connectors */
+      .org-chart li::before, .org-chart li::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 50%;
+        border-top: 1px solid var(--chart-line-color);
+        width: 50%;
+        height: 20px;
+      }
+      .org-chart li::after {
+        right: auto;
+        left: 50%;
+        border-left: 1px solid var(--chart-line-color);
+      }
+      .org-chart li:only-child::after, .org-chart li:only-child::before {
+        display: none;
+      }
+      .org-chart li:only-child {
+        padding-top: 0;
+      }
+      .org-chart li:first-child::before, .org-chart li:last-child::after {
+        border: 0 none;
+      }
+      .org-chart li:last-child::before {
+        border-right: 1px solid var(--chart-line-color);
+        border-radius: 0 5px 0 0;
+      }
+      .org-chart li:first-child::after {
+        border-radius: 5px 0 0 0;
+      }
+      .org-chart ul ul::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-left: 1px solid var(--chart-line-color);
+        width: 0;
+        height: 20px;
+      }
+      
+      /* Node Base Styles */
+      .org-chart .node-content {
+        background-color: #fff;
+        color: var(--body-color);
+        display: inline-block;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 1px solid var(--gray-color);
+        text-decoration: none;
+        transition: all 0.3s;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        min-width: 180px;
+        max-width: 240px;
+        font-family: var(--heading-font);
+        font-weight: 600;
+        font-size: 14px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .org-chart .node-content:hover {
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        transform: translateY(-3px);
+        border-color: var(--heading-color);
+      }
+      
+      /* Level 1: Root (Shareholders) */
+      .level-1 {
+        background-color: var(--heading-color) !important;
+        color: #fff !important;
+        border: none !important;
+        font-size: 18px !important;
+        text-transform: uppercase;
+        padding: 20px 40px !important;
+        box-shadow: 0 10px 20px rgba(106, 191, 123, 0.3) !important;
+      }
+
+      /* Level 2: Board of Directors */
+      .level-2 {
+        background-color: #fff !important;
+        color: var(--heading-color) !important;
+        border: 2px solid var(--heading-color) !important;
+        font-size: 16px !important;
+        text-transform: uppercase;
+      }
+
+      /* Level 3: General Director Board */
+      .level-3 {
+        background-color: #eef7f0 !important;
+        color: var(--heading-color) !important;
+        border: 1px solid var(--heading-color) !important;
+      }
+
+      /* Level 4: Departments / Divisions */
+      .level-4 {
+        vertical-align: top;
+      }
+      .level-4 > .node-content {
+        background-color: #fff !important;
+        border-top: 4px solid var(--heading-color) !important;
+        padding: 0 !important;
+        text-align: left;
+        overflow: hidden;
+      }
+      
+      .level-4-title {
+        background-color: #f9fbf3;
+        color: var(--heading-color);
+        padding: 15px 10px;
+        font-weight: 700;
+        font-size: 15px;
+        border-bottom: 1px solid var(--gray-color);
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .level-4 .departments {
+        list-style: none;
+        padding: 15px 20px;
+        margin: 0;
+        display: block; /* Override flex from ul */
+      }
+      .level-4 .departments li {
+        display: block;
+        float: none;
+        padding: 8px 0;
+        text-align: left;
+        font-family: var(--body-font);
+        font-weight: 400;
+        color: var(--body-color);
+        border-bottom: 1px dashed var(--gray-color);
+        font-size: 14px;
+      }
+      .level-4 .departments li::before,
+      .level-4 .departments li::after {
+        display: none;
+      }
+      .level-4 .departments li:last-child {
+        border-bottom: none;
+      }
+      
+      @media (max-width: 991px) {
+        .org-chart-container {
+            padding: 20px;
+        }
+        .org-chart li {
+            padding: 20px 5px 0 5px;
+        }
+        .org-chart .node-content {
+            min-width: 140px;
+            font-size: 13px;
+        }
+      }
+
+      /* Founding Shareholders Section Styles */
+      .shareholder-card {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        transition: all 0.4s ease;
+        height: 100%;
+        border: 1px solid var(--gray-color);
+        position: relative;
+      }
+      .shareholder-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        border-color: var(--heading-color);
+      }
+      .shareholder-img-wrapper {
+        width: 100%;
+        padding-top: 100%; /* 1:1 Aspect Ratio */
+        position: relative;
+        overflow: hidden;
+      }
+      .shareholder-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.6s ease;
+      }
+      .shareholder-card:hover .shareholder-img {
+        transform: scale(1.1);
+      }
+      .shareholder-info {
+        padding: 25px 20px;
+        text-align: center;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+      }
+      .shareholder-name {
+        color: var(--heading-color);
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .shareholder-role {
+        color: #888;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        display: block;
+        font-weight: 600;
+        font-family: var(--body-font);
+      }
+      .shareholder-desc {
+        font-size: 15px;
+        color: var(--body-color);
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 0;
+      }
+      .shareholder-decoration {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--heading-color);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+        transform-origin: left;
+      }
+      .shareholder-card:hover .shareholder-decoration {
+        transform: scaleX(1);
+      }
+  </style>
   </head>
   <body>
     <!-- Start Preloader -->
@@ -206,13 +494,174 @@
       <div class="cs_height_64 cs_height_lg_50"></div>
     </div>
     <!-- End Brand Section -->
+    <!-- Start Organization Chart Section -->
+    <section>
+      <div class="cs_height_100 cs_height_lg_70"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 text-center">
+          <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown">SƠ ĐỒ TỔ CHỨC</h2>
+        </div>
+        <div class="cs_height_64 cs_height_lg_50"></div>
+        <div class="wow fadeInUp" data-wow-duration="1s">
+          <div class="org-chart-container">
+            <div class="org-chart">
+            <ul>
+              <li>
+                <div class="node-content level-1">ĐẠI HỘI ĐỒNG CỔ ĐÔNG</div>
+                <ul>
+                  <li>
+                    <div class="node-content level-2">HỘI ĐỒNG QUẢN TRỊ</div>
+                    <ul>
+                      <li>
+                        <div class="node-content level-3">BAN TỔNG GIÁM ĐỐC</div>
+                        <ul>
+                          <li class="level-4">
+                            <div class="node-content">
+                              <div class="level-4-title">KHỐI HỖ TRỢ</div>
+                              <ul class="departments">
+                                <li>Văn phòng, Nhân sự</li>
+                                <li>Kế toán</li>
+                                <li>Công nghệ</li>
+                                <li>Pháp chế - QLCL</li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="level-4">
+                            <div class="node-content">
+                                <div class="level-4-title">KHỐI ĐẦU TƯ</div>
+                                <ul class="departments">
+                                    <li>Tài chính</li>
+                                    <li>Đầu tư, Dự án</li>
+                                    <li>BQLDA Khu lâm nghiệp UDCNC</li>
+                                    <li>BQLDA IaPia</li>
+                                    <li>BQLDA BioChar</li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="level-4">
+                            <div class="node-content">
+                                <div class="level-4-title">KHỐI SẢN XUẤT</div>
+                                <ul class="departments">
+                                    <li>Các Nhà máy Lương thực, Thực phẩm</li>
+                                    <li>Các Nhà máy Tinh chế rau củ quả</li>
+                                    <li>Nhà máy Sấy thăng hoa</li>
+                                    <li>Nhà máy Hóa mỹ phẩm</li>
+                                    <li>Nhà máy Than sinh học</li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="level-4">
+                            <div class="node-content">
+                                <div class="level-4-title">KHỐI CUNG ỨNG</div>
+                                <ul class="departments">
+                                    <li>Lương thực, Thực phẩm tinh chế</li>
+                                    <li>Rau củ quả tinh chế</li>
+                                    <li>Hóa mỹ phẩm</li>
+                                    <li>Thiết bị và Vật liệu xây dựng</li>
+                                    <li>Cây giống, Vật tư nông nghiệp</li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="level-4">
+                            <div class="node-content">
+                                <div class="level-4-title">KHỐI DỊCH VỤ</div>
+                                <ul class="departments">
+                                    <li>Tư vấn, Thẩm định tín chỉ Carbon</li>
+                                    <li>Tư vấn, Đào tạo tín chỉ Carbon, ESG</li>
+                                    <li>Phát triển Quỹ Carbon</li>
+                                    <li>Giao dịch & Ủy thác tín chỉ Carbon</li>
+                                    <li>Tư vấn công nghệ phát triển vùng trồng</li>
+                                </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_70 cs_height_lg_50"></div>
+    </section>
+    <!-- End Organization Chart Section -->
+  <!-- Start Founding Shareholders Section -->
+    <section>
+      <div class="cs_height_100 cs_height_lg_70"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1">
+          <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown" style="max-width: fit-content;">CỔ ĐÔNG SÁNG LẬP</h2>
+          <div class="cs_height_20"></div>
+        </div>
+        <div class="cs_height_64 cs_height_lg_50"></div>
+        <div class="row cs_gap_y_30">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="shareholder-card">
+              <div class="shareholder-img-wrapper">
+                <img src="assets/img/team_member_1.jpg" alt="Đỗ Hữu Lương" class="shareholder-img">
+                <div class="shareholder-decoration"></div>
+              </div>
+              <div class="shareholder-info">
+                <h3 class="shareholder-name">TS Đỗ Hữu Lương</h3>
+                <span class="shareholder-role">Chủ tịch HĐQT</span>
+                <p class="shareholder-desc">Người định hình tầm nhìn chiến lược và văn hóa doanh nghiệp của AFS từ những ngày đầu thành lập.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="shareholder-card">
+              <div class="shareholder-img-wrapper">
+                <img src="assets/img/team_member_4.jpg" alt="Louis" class="shareholder-img">
+                <div class="shareholder-decoration"></div>
+              </div>
+              <div class="shareholder-info">
+                <h3 class="shareholder-name">Louis T. Nguyen</h3>
+                <span class="shareholder-role">Phó Chủ tịch thường trực HĐQT</span>
+                <p class="shareholder-desc">Chuyên gia tài chính với hơn 20 năm kinh nghiệm, đảm bảo sự vững mạnh về nguồn lực cho tập đoàn.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+             <div class="shareholder-card">
+              <div class="shareholder-img-wrapper">
+                <img src="assets/img/team_member_viet_dung.jpg" alt="Nguyễn Đức Thủy" class="shareholder-img">
+                <div class="shareholder-decoration"></div>
+              </div>
+              <div class="shareholder-info">
+                <h3 class="shareholder-name">Nguyễn Đức Thủy</h3>
+                <span class="shareholder-role">Phó Chủ tịch HĐQT</span>
+                <p class="shareholder-desc">Tiên phong trong ứng dụng công nghệ cao vào sản xuất nông nghiệp và quản lý chuỗi cung ứng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+             <div class="shareholder-card">
+              <div class="shareholder-img-wrapper">
+                <img src="assets/img/team_member_pham_cuong.jpg" alt="Nguyễn Anh Dũng" class="shareholder-img">
+                <div class="shareholder-decoration"></div>
+              </div>
+              <div class="shareholder-info">
+                <h3 class="shareholder-name">Nguyễn Anh Dũng</h3>
+                <span class="shareholder-role">Phó Chủ tịch HĐQT</span>
+                <p class="shareholder-desc">Đóng góp quan trọng trong việc xây dựng mạng lưới đối tác và phát triển thị trường quốc tế.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_50"></div>
+    </section>
+    <!-- End Founding Shareholders Section -->
   <!-- Start Team Member Section -->
   <section>
     <div class="cs_height_100 cs_height_lg_70"></div>
     <div class="container">
       <div class="cs_slider cs_style_1 cs_slider_gap_24">
         <div class="cs_section_heading cs_style_2 cs_color_1">
-          <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown">ĐỘI NGŨ<br><span>CỦA</span> CHÚNG TÔI</h2>
+          <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown">ĐỘI NGŨ<br><span>CHUYÊN GIA</span> </h2>
           <div class="cs_section_right">
             <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">WORKS</h3>
             <div class="cs_slider_arrows cs_style_4 cs_hide_lg">
@@ -346,6 +795,117 @@
     <div class="cs_height_100 cs_height_lg_70"></div>
   </section>
   <!-- End Team Member Section -->
+     <!-- Start Works Section -->
+  <section>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+    <div class="container">
+      <div class="cs_section_heading cs_style_2 cs_color_1">
+        <h2 class="cs_section_title cs_fs_80 mb-0 wow fadeInDown" style="line-height: 120px;">HÀNH TRÌNH <span>KIẾN
+            TẠO</span> GIÁ TRỊ BỀN VỮNG CỦA <span>CHÚNG TÔI</span></h2>
+        <div class="cs_section_right">
+          <h3 class="cs_brackets_title cs_normal cs_fs_16 mb-0">WORKS</h3>
+        </div>
+      </div>
+      <div class="cs_height_64 cs_height_lg_50"></div>
+      <div class="cs_full_width_slider_section">
+        <div class="cs_slider cs_style_1 cs_slider_gap_24">
+          <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0"
+            data-variable-width="1" data-slides-per-view="1">
+            <div class="cs_slider_wrapper">
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_4.png">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Khu lâm nghiệp CNC Gia Lai</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Gia Lai (400ha)</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Trung tâm R&D và đào tạo, đồng bộ hóa từ nghiên cứu giống, ứng dụng công
+                      nghệ cao đến phát triển thị trường lâm sản và du lịch sinh thái.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_7.png">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Vùng canh tác nông nghiệp hiện đại</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Xã Ia Pia (2.935 ha)</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Mô hình trồng tre phục hồi rừng và canh tác nông nghiệp ngắn ngày, tạo
+                      nguồn thu, cải tạo đất và giảm phát thải, phù hợp lộ trình thị trường carbon.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_9_1.jpg">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Trồng tre nguyên liệu</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Việt Nam, Lào, Campuchia (≈ 35.000 ha)</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Hình thành vùng nguyên liệu tre xuyên biên giới, tạo chuỗi giá trị từ cây
+                      tre, sản phẩm công nghiệp đến tín chỉ carbon.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_card cs_style_4">
+                  <div class="cs_card_thumb cs_bg_filed cs_mb_40" data-src="assets/img/cacbon/project_thumb_10.jpg">
+                  </div>
+                  <div class="cs_card_info">
+                    <ul class="cs_card_info_list cs_mp_0">
+                      <li>
+                        <p class="mb-0">Tên</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Cụm dự án mới</h3>
+                      </li>
+                      <li>
+                        <p class="mb-0">Vị trí</p>
+                        <h3 class="mb-0 cs_fs_20 cs_bold">Đa dạng</h3>
+                      </li>
+                    </ul>
+                    <div class="cs_card_text">Tập trung vào các mô hình: Trồng tre kết hợp sản xuất Biochar, phục hồi
+                      rừng nghèo kết hợp sinh kế, và xây dựng chuỗi cung ứng xanh toàn diện.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="cs_slider_arrows cs_style_3 cs_hide_lg">
+            <div class="cs_right_arrow cs_heading_color cs_fs_20 cs_center">
+              <span class="cs_center">NEXT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cs_height_100 cs_height_lg_70"></div>
+  </section>
+  <!-- End Works Section -->
    <!-- Start Card Section -->
     <section class="cs_half_bg cs_color_1">
       <div class="container">
@@ -365,6 +925,7 @@
       </div>
     </section>
     <!-- End Card Section -->
+     
     <!-- Start Footer Section -->
     <footer class="cs_footer cs_style_1 cs_color_2">
       <div class="container">
