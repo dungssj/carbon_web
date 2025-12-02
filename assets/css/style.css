@@ -3865,7 +3865,7 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    line-height: 1.6em;
+    line-height: 2em;
   }
   .cs_nav .cs_nav_list {
     display: -webkit-box !important;
